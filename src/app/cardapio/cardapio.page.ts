@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cardapio.page.scss'],
 })
 export class CardapioPage  {
+
+  
   cardapios =[
     {
       imagem:'https://i.pinimg.com/564x/c4/21/0e/c4210e53b286c1cb426be29516be59a6.jpg',

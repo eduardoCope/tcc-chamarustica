@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EnderecoService {
-  constructor(private firestore: AngularFirestore) {}
+  constructor() {}
 
-  addEndereco(data: any) {
-    return this.firestore.collection('enderecos').add(data);
+ endereco= [
+  {
+    nome: null,
+    telefone: null,
+    CEP: null,
+    numero: null,
+    complemento: null,
+    delivery: true
   }
+ ]
 }

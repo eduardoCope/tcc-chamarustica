@@ -14,22 +14,12 @@ export class CheckoutPage implements OnInit {
   constructor(
     public produtoService:ProdutoService,
     public carrinhoService:CarrinhoService,
-    private enderecoService: EnderecoService,
+    public enderecoService: EnderecoService,
   ) { }
 
   ngOnInit() {}
 
-  onSubmit(form: NgForm) {
-    if (form.valid) {
-      this.enderecoService.addEndereco(form.value)
-        .then(() => {
-          alert('Endereço registrado com sucesso! 🎉');
-          form.reset();
-        })
-        .catch((error) => {
-          console.error('Erro ao salvar endereço:', error);
-        });
-    }
-  }
+ 
+
 
 }
